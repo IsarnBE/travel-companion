@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Travel Companion</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <main class="app">
+
+    <header class="hero">
+      <div class="hero-overlay">
+        <p class="eyebrow">Travel Companion</p>
+        <h1 id="destination-name">Cargando...</h1>
+        <p class="dates" id="destination-dates"></p>
+        <p class="subtitle" id="destination-subtitle"></p>
+      </div>
+    </header>
+
+    <!-- Previsión integrada en la cabecera -->
+    <section class="weather-strip">
+      <div class="weather-heading">
+        <div>
+          <p class="weather-label">Previsión del viaje</p>
+          <h2>10–16 de agosto</h2>
+        </div>
+
+        <span class="weather-location">📍 Peñíscola</span>
+      </div>
+
+      <div class="forecast">
+
+        <article class="forecast-day">
+          <span class="weekday">LUN</span>
+          <strong>10</strong>
+          <span class="weather-icon">☀️</span>
+          <small>—°</small>
+        </article>
+
+        <article class="forecast-day">
+          <span class="weekday">MAR</span>
+          <strong>11</strong>
+          <span class="weather-icon">🌤️</span>
+          <small>—°</small>
+        </article>
+
+        <article class="forecast-day special-day">
+          <span class="weekday">MIÉ</span>
+          <strong>12</strong>
+          <span class="weather-icon">🌒</span>
+          <small>Eclipse</small>
+        </article>
+
+        <article class="forecast-day">
+          <span class="weekday">JUE</span>
+          <strong>13</strong>
+          <span class="weather-icon">☀️</span>
+          <small>—°</small>
+        </article>
+
+        <article class="forecast-day">
+          <span class="weekday">VIE</span>
+          <strong>14</strong>
+          <span class="weather-icon">🌤️</span>
+          <small>—°</small>
+        </article>
+
+        <article class="forecast-day">
+          <span class="weekday">SÁB</span>
+          <strong>15</strong>
+          <span class="weather-icon">☀️</span>
+          <small>—°</small>
+        </article>
+
+        <article class="forecast-day">
+          <span class="weekday">DOM</span>
+          <strong>16</strong>
+          <span class="weather-icon">☀️</span>
+          <small>—°</small>
+        </article>
+
+      </div>
+
+      <p class="weather-note">
+        La previsión real aparecerá cuando esté disponible.
+      </p>
+    </section>
+
+    <section class="today-card">
+      <p class="label">Ahora</p>
+      <h2>Preparando el viaje</h2>
+      <p>Todo listo para ir incorporando mapas, eventos y lugares.</p>
+    </section>
+
+    <section class="archive">
+
+      <!-- VIAJE pasa a ser el primer archivo -->
+      <article class="folder folder-trip">
+        <button class="folder-tab" type="button">
+          <span class="folder-icon">📅</span>
+
+          <span class="folder-title">
+            <strong>Viaje</strong>
+            <small>Eventos, ideas y diario</small>
+          </span>
+
+          <span class="folder-arrow">⌄</span>
+        </button>
+
+        <div class="folder-content">
+          <ul class="event-preview">
+            <li>
+              <span>10 agosto</span>
+              🏠 Llegada
+            </li>
+
+            <li>
+              <span>11 agosto · 18:30</span>
+              🔐 Escape Room
+            </li>
+
+            <li>
+              <span>12 agosto · 20:30</span>
+              🌒 Eclipse
+            </li>
+
+            <li>
+              <span>16 agosto</span>
+              🧳 Salida
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="folder folder-map">
+  <button class="folder-tab" type="button">
+    <span class="folder-icon">🗺️</span>
+
+    <span class="folder-title">
+      <strong>Mapas</strong>
+      <small>Centro de operaciones</small>
+    </span>
+
+    <span class="folder-arrow">⌄</span>
+  </button>
+
+  <div class="folder-content map-content">
+    <div class="map-heading">
+      <p class="map-label">Mapa del viaje</p>
+      <h3>Peñíscola y alrededores</h3>
+      <p>Playas, comida, actividades, supermercados y excursiones.</p>
+    </div>
+
+    <div class="map-frame">
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1As36r0sPnsPbciLy-aY8WuUIRZUlILk"
+        title="Mapa de Peñíscola"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <a
+      class="map-open-button"
+      href="https://www.google.com/maps/d/viewer?mid=1As36r0sPnsPbciLy-aY8WuUIRZUlILk"
+      target="_blank"
+      rel="noopener noreferrer">
+      Abrir mapa completo
+    </a>
+  </div>
+</article>
+
+      <article class="folder folder-food">
+        <button class="folder-tab" type="button">
+          <span class="folder-icon">🍽️</span>
+
+          <span class="folder-title">
+            <strong>Comida</strong>
+            <small>Comer, pedir y heladerías</small>
+          </span>
+
+          <span class="folder-arrow">⌄</span>
+        </button>
+
+        <div class="folder-content">
+          <div class="mini-options">
+            <button type="button">🍴 Comer sentado</button>
+            <button type="button">🥡 Pedir</button>
+            <button type="button">🍦 Heladerías</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="folder folder-more">
+        <button class="folder-tab" type="button">
+          <span class="folder-icon">🧭</span>
+
+          <span class="folder-title">
+            <strong>Más</strong>
+            <small>Apartamento, equipaje y excursiones</small>
+          </span>
+
+          <span class="folder-arrow">⌄</span>
+        </button>
+
+        <div class="folder-content">
+          <div class="mini-options">
+            <button type="button">🏠 Apartamento</button>
+            <button type="button">🎒 Qué llevar</button>
+            <button type="button">🎟️ Actividades</button>
+            <button type="button">🚗 Excursiones</button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

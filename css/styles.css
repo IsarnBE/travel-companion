@@ -1,0 +1,489 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #163047;
+  background: #eaf1f5;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, #dfeef5 0%, #edf3f6 55%, #dce6eb 100%);
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  width: min(100%, 560px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  background: #f7fafb;
+  box-shadow: 0 0 45px rgba(27, 53, 73, 0.14);
+}
+
+.hero {
+  min-height: 275px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-radius: 0 0 34px 34px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(4, 25, 42, 0.08),
+      rgba(3, 24, 41, 0.78)
+    ),
+    url("https://images.unsplash.com/photo-1568933526025-4d85dd2b7edb?auto=format&fit=crop&w=1200&q=85");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-overlay {
+  width: 100%;
+  padding: 30px 24px 50px;
+  color: white;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+.eyebrow {
+  margin: 0 0 7px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  opacity: 0.86;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(42px, 11vw, 60px);
+  line-height: 0.98;
+}
+
+.dates {
+  margin: 12px 0 0;
+  color: #ffe898;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin: 5px 0 0;
+  font-size: 15px;
+  opacity: 0.88;
+}
+
+.today-card {
+  position: relative;
+  z-index: 2;
+  margin: -28px 18px 26px;
+  padding: 21px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 17px 40px rgba(25, 59, 82, 0.16);
+  backdrop-filter: blur(12px);
+}
+
+.label {
+  margin: 0 0 5px;
+  color: #0479a6;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.today-card h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+
+.today-card p:last-child {
+  margin: 0;
+  color: #647382;
+  line-height: 1.45;
+}
+
+.archive {
+  padding: 0 16px;
+}
+
+.folder {
+  --folder-color: #2687c8;
+
+  margin-bottom: 14px;
+  overflow: hidden;
+  border-radius: 11px 25px 25px 11px;
+  background: white;
+  box-shadow: 0 12px 27px rgba(27, 57, 77, 0.12);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.folder:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 15px 31px rgba(27, 57, 77, 0.16);
+}
+
+.folder-weather {
+  --folder-color: #2d9cdb;
+}
+
+.folder-map {
+  --folder-color: #29a06b;
+}
+
+.folder-food {
+  --folder-color: #ed9d32;
+}
+
+.folder-trip {
+  --folder-color: #8d67cc;
+}
+
+.folder-more {
+  --folder-color: #d3aa2e;
+}
+
+.folder-tab {
+  width: 100%;
+  min-height: 84px;
+  display: grid;
+  grid-template-columns: 52px 1fr 34px;
+  align-items: center;
+  gap: 9px;
+
+  padding: 15px 17px;
+  border: 0;
+  border-left: 9px solid var(--folder-color);
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--folder-color) 11%, white),
+      white 72%
+    );
+
+  color: #183348;
+  text-align: left;
+  cursor: pointer;
+}
+
+.folder-icon {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.folder-title {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.folder-title strong {
+  font-size: 21px;
+}
+
+.folder-title small {
+  color: #667684;
+  font-size: 13px;
+}
+
+.folder-arrow {
+  color: var(--folder-color);
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  transition: transform 220ms ease;
+}
+
+.folder-content {
+  display: none;
+  padding: 4px 21px 22px 30px;
+  border-left: 9px solid var(--folder-color);
+  color: #536776;
+  background: white;
+}
+
+.folder.open .folder-content {
+  display: block;
+}
+
+.folder.open .folder-arrow {
+  transform: rotate(180deg);
+}
+
+.folder-content p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+
+.mini-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 10px;
+}
+
+.mini-options button {
+  min-height: 48px;
+  padding: 10px;
+  border: 1px solid #d9e3e8;
+  border-radius: 14px;
+  background: #f7fafb;
+  color: #274358;
+  cursor: pointer;
+}
+
+.event-preview {
+  display: grid;
+  gap: 8px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-preview li {
+  padding: 12px 13px;
+  border-radius: 13px;
+  background: #f5f2fb;
+}
+
+.event-preview span {
+  display: block;
+  margin-bottom: 3px;
+  color: #7758aa;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+@media (max-width: 390px) {
+  .hero {
+    min-height: 245px;
+  }
+
+  .mini-options {
+    grid-template-columns: 1fr;
+  }
+
+  .folder-tab {
+    grid-template-columns: 45px 1fr 28px;
+  }
+
+  .folder-title strong {
+    font-size: 19px;
+  }
+}/* PREVISIÓN INTEGRADA EN LA CABECERA */
+
+.weather-strip {
+  position: relative;
+  z-index: 3;
+  margin: -28px 14px 18px;
+  padding: 19px 14px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 18px 42px rgba(25, 59, 82, 0.17);
+  backdrop-filter: blur(14px);
+}
+
+.weather-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 6px 14px;
+}
+
+.weather-heading h2 {
+  margin: 2px 0 0;
+  font-size: 21px;
+}
+
+.weather-label {
+  margin: 0;
+  color: #1685b6;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.weather-location {
+  padding: 7px 10px;
+  border-radius: 50px;
+  background: #edf7fb;
+  color: #31718e;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(52px, 1fr));
+  gap: 7px;
+  overflow-x: auto;
+  padding: 2px 1px 8px;
+  scrollbar-width: thin;
+}
+
+.forecast-day {
+  min-width: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  padding: 10px 5px;
+  border-radius: 17px;
+  background: #f4f8fa;
+  color: #274458;
+  text-align: center;
+}
+
+.forecast-day .weekday {
+  color: #70808c;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.forecast-day strong {
+  font-size: 16px;
+}
+
+.weather-icon {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.forecast-day small {
+  min-height: 15px;
+  color: #637683;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.special-day {
+  background: linear-gradient(180deg, #eee9fb, #f8f5ff);
+  box-shadow: inset 0 0 0 1px #d8caf3;
+}
+
+.special-day strong,
+.special-day small {
+  color: #7654a9;
+}
+
+.weather-note {
+  margin: 4px 5px 0;
+  color: #7a8993;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* La tarjeta "Preparando el viaje" ya no se superpone a la foto */
+
+.today-card {
+  margin: 0 18px 26px;
+}
+
+@media (max-width: 460px) {
+  .forecast {
+    grid-template-columns: repeat(7, 56px);
+  }
+
+  .weather-heading {
+    align-items: center;
+  }
+
+  .weather-heading h2 {
+    font-size: 19px;
+  }
+}/* MAPA INTEGRADO */
+
+.map-content {
+  padding-right: 18px;
+}
+
+.map-heading {
+  margin: 8px 0 16px;
+}
+
+.map-heading h3 {
+  margin: 2px 0 5px;
+  color: #173b2d;
+  font-size: 21px;
+}
+
+.map-heading p:last-child {
+  margin: 0;
+  color: #67786f;
+  font-size: 13px;
+}
+
+.map-label {
+  margin: 0;
+  color: #299064;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.map-frame {
+  width: 100%;
+  height: 390px;
+  overflow: hidden;
+  border: 1px solid #d9e7df;
+  border-radius: 18px;
+  background: #eef4f0;
+  box-shadow: 0 10px 25px rgba(31, 91, 66, 0.13);
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-open-button {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13px;
+  padding: 11px 16px;
+  border-radius: 15px;
+  background: #299064;
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(41, 144, 100, 0.23);
+}
+
+.map-open-button:hover {
+  background: #237d58;
+}
+
+@media (max-width: 420px) {
+  .map-frame {
+    height: 330px;
+  }
+}
