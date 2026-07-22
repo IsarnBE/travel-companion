@@ -39,11 +39,40 @@ async function loadDestination() {
   }
 }
 
+async function loadComponent(elementId, filePath) {
+  const container = document.getElementById(elementId);
+
+  if (!container) {
+    console.error(`No existe el contenedor #${elementId}`);
+    return;
+  }
+
+  try {
+    const response = await fetch(filePath);
+
+    if (!response.ok) {
+      throw new Error(
+        `No se pudo cargar ${filePath}: ${response.status}`
+      );
+    }
+
+    container.innerHTML = await response.text();
+  } catch (error) {
+    console.error(error);
+    container.innerHTML =
+      "<p>No se ha podido cargar esta sección.</p>";
+  }
+}
+
 function enableFolders() {
   const folders = document.querySelectorAll(".folder");
 
   folders.forEach((folder) => {
     const button = folder.querySelector(".folder-tab");
+
+    if (!button) {
+      return;
+    }
 
     button.addEventListener("click", () => {
       const wasOpen = folder.classList.contains("open");
@@ -59,5 +88,15 @@ function enableFolders() {
   });
 }
 
-loadDestination();
-enableFolders();
+async function startApp() {
+  await loadDestination();
+
+  await loadComponent(
+    "map-component",
+    "components/map.html"
+  );
+
+  enableFolders();
+}
+
+startApp();
