@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "nombre": "Supermercados masymas",
+    "comentario": "",
+    "lat": 40.3613125,
+    "lng": 0.396276,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.3613125,0.396276"
+  },
+  {
+    "nombre": "Supermercado 24H NightShop Peñíscola",
+    "comentario": "",
+    "lat": 40.3592907,
+    "lng": 0.3979329,
+    "telefono": "644727086",
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.3592907,0.3979329"
+  },
+  {
+    "nombre": "Supermercados Consum",
+    "comentario": "",
+    "lat": 40.360321,
+    "lng": 0.400007,
+    "telefono": "964467791",
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.360321,0.400007"
+  },
+  {
+    "nombre": "La Marsela",
+    "comentario": "Panadería y terraza. Ideal para desayunos rápidos.",
+    "lat": 40.3575662,
+    "lng": 0.4062438,
+    "telefono": "964460494",
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.3575662,0.4062438"
+  }
+]

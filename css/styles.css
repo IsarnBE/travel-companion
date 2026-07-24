@@ -35,22 +35,22 @@ button {
 }
 
 .hero {
-  min-height: 275px;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  border-radius: 0 0 34px 34px;
+    min-height: 275px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 0 0 34px 34px;
 
-  background:
-    linear-gradient(
-      180deg,
-      rgba(4, 25, 42, 0.08),
-      rgba(3, 24, 41, 0.78)
-    ),
-    url("https://images.unsplash.com/photo-1568933526025-4d85dd2b7edb?auto=format&fit=crop&w=1200&q=85");
+    background:
+        linear-gradient(
+            180deg,
+            rgba(4,25,42,.08),
+            rgba(3,24,41,.78)
+        ),
+        url("../assets/peniscola.png");
 
-  background-position: center;
-  background-size: cover;
+    background-size: cover;
+    background-position: center 35%;
 }
 
 .hero-overlay {
@@ -751,4 +751,179 @@ h1 {
 .call-button {
     background: #eef1fb !important;
     color: #4f5fa4 !important;
+}/* CUENTA ATRÁS DEL VIAJE */
+
+.trip-content {
+  padding-right: 18px;
+}
+
+.countdown-card {
+  margin: 10px 0 20px;
+  padding: 32px 18px;
+  border: 1px solid #ded5f0;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top right, #eee7fb, transparent 55%),
+    linear-gradient(145deg, #fbf9ff, #f1ecfa);
+  color: #503c72;
+  text-align: center;
+
+  display:flex;
+flex-direction:column;
+justify-content:center;
+
+  box-shadow: 0 11px 28px rgba(100, 72, 145, 0.13);
+}
+
+.countdown-label {
+  margin: 0;
+  color: #8162ae;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.countdown-icon {
+  margin-top: 9px;
+  font-size: 34px;
+  line-height: 1;
+}
+
+.countdown-number {
+  display: block;
+  margin: 0;
+  color: #684891;
+  font-size: 98px;
+  line-height: .92;
+  letter-spacing: -.06em;
+}
+
+.countdown-message {
+  margin: 8px 0 0;
+  color: #665577;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.trip-events h3 {
+  margin: 0 0 10px;
+  color: #503c72;
+  font-size: 18px;
+}.countdown-unit{
+    margin:2px 0 12px;
+
+    color:#7a5ea6;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    letter-spacing:.28em;
+
+    text-transform:uppercase;
+}
+
+.countdown-message{
+    margin:0;
+
+    color:#5d4a78;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    line-height:1.35;
+}/* PLANES */
+
+.plans-placeholder{
+    padding:18px;
+
+    border:1px dashed #d7dfe6;
+
+    border-radius:18px;
+
+    background:#fafcfd;
+
+    text-align:center;
+}
+
+.plans-icon{
+    display:block;
+
+    font-size:44px;
+
+    margin-bottom:10px;
+}
+
+.plans-placeholder h3{
+    margin:0 0 8px;
+
+    color:#34495e;
+}
+
+.plans-placeholder p{
+    margin:0;
+
+    line-height:1.55;
+}/* PLANES */
+
+.plans-list{
+    display:grid;
+    gap:12px;
+}
+
+.plan-card{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    padding:14px;
+
+    border:1px solid #e3e9ec;
+    border-radius:16px;
+
+    background:white;
+
+    transition:.15s;
+}
+
+.plan-card:hover{
+    transform:translateY(-1px);
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.plan-icon{
+    flex-shrink:0;
+
+    width:54px;
+    height:54px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:#f3f7fb;
+
+    font-size:28px;
+}
+
+.plan-card h4{
+    margin:0 0 4px;
+
+    color:#1d3345;
+
+    font-size:17px;
+}
+
+.plan-card p{
+    margin:0;
+
+    color:#6b7a86;
+
+    font-size:13px;
+
+    line-height:1.4;
 }
