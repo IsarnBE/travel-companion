@@ -299,13 +299,31 @@ function enableOperationCategories() {
   const buttons =
     document.querySelectorAll(".operation-category");
 
+  const results =
+    document.getElementById("operations-results");
+
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
+      const isActive =
+        button.classList.contains("active");
+
       buttons.forEach((otherButton) => {
         otherButton.classList.remove("active");
       });
 
+      if (isActive) {
+        if (results) {
+          results.hidden = true;
+        }
+
+        return;
+      }
+
       button.classList.add("active");
+
+      if (results) {
+        results.hidden = false;
+      }
 
       moveOperationsResults(button);
 
@@ -321,11 +339,26 @@ function enableOperationCategories() {
     );
 
   if (initialButton) {
+    initialButton.classList.remove("active");
+    moveOperationsResults(initialButton);
+  }
+
+  if (results) {
+    results.hidden = true;
+  }
+}
+
+  const initialButton =
+    document.querySelector(
+      '.operation-category[data-category="all"]'
+    );
+
+  if (initialButton) {
     moveOperationsResults(initialButton);
   }
 
   selectOperationCategory("all");
-}
+
 
 async function startApp() {
   await loadDestination();
