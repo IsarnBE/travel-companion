@@ -1,0 +1,35 @@
+[
+  {
+  "nombre": "Apartamento - Víctor Robles",
+  "comentario": "Carrer dels Vents, 1",
+  "lat": 40.3615708,
+  "lng": 0.397087,
+  "telefono": "697296568",
+  "contacto": "Víctor Robles",
+  "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.3615708,0.397087"
+},
+  {
+    "nombre": "Farmacia más cercana",
+    "comentario": "Farmacia Carmen Pitarch Pérez",
+    "lat": 40.3593788,
+    "lng": 0.3978264,
+    "telefono": "964480657",
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.3593788,0.3978264"
+  },
+  {
+    "nombre": "Centro de Salud",
+    "comentario": "Centre de Salut de Peníscola",
+    "lat": 40.3608048,
+    "lng": 0.4019841,
+    "telefono": "964468520",
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.3608048,0.4019841"
+  },
+  {
+    "nombre": "Policía Local de Peñíscola",
+    "comentario": "Dependencias de la Policía Local",
+    "lat": 40.3710322,
+    "lng": 0.4041334,
+    "telefono": "964480121",
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.3710322,0.4041334"
+  }
+]
