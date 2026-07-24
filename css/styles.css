@@ -575,6 +575,16 @@ h1 {
 
 .operations-categories {
   display: grid;
+  gap: 10px;
+}
+
+.operations-row {
+  display: grid;
+  gap: 12px;
+}
+
+.operations-row-buttons {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
@@ -727,15 +737,18 @@ h1 {
 }
 
 @media (max-width: 360px) {
-  .operations-categories {
-    grid-template-columns: 1fr;
+
+  .operations-row-buttons {
+      grid-template-columns: 1fr;
   }
+
+}
 
   .operation-category {
     min-height: 64px;
     flex-direction: row;
   }
-}.call-button {
+.call-button {
     background: #eef1fb !important;
     color: #4f5fa4 !important;
 }

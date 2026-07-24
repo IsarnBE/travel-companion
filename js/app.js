@@ -281,6 +281,20 @@ async function selectOperationCategory(category) {
   }
 }
 
+function moveOperationsResults(button) {
+  const results =
+    document.getElementById("operations-results");
+
+  const row =
+    button.closest(".operations-row");
+
+  if (!results || !row) {
+    return;
+  }
+
+  row.appendChild(results);
+}
+
 function enableOperationCategories() {
   const buttons =
     document.querySelectorAll(".operation-category");
@@ -293,11 +307,22 @@ function enableOperationCategories() {
 
       button.classList.add("active");
 
+      moveOperationsResults(button);
+
       selectOperationCategory(
         button.dataset.category
       );
     });
   });
+
+  const initialButton =
+    document.querySelector(
+      '.operation-category[data-category="all"]'
+    );
+
+  if (initialButton) {
+    moveOperationsResults(initialButton);
+  }
 
   selectOperationCategory("all");
 }
