@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "nombre": "Castillo del Papa Luna",
+    "comentario": "La visita imprescindible de Peñíscola.",
+    "lat": 40.36094,
+    "lng": 0.40609,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.36094,0.40609"
+  },
+  {
+    "nombre": "Parque de Artillería",
+    "comentario": "Jardines históricos con vistas al Mediterráneo.",
+    "lat": 40.36127,
+    "lng": 0.40568,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.36127,0.40568"
+  },
+  {
+    "nombre": "Bufador",
+    "comentario": "Grieta natural por donde rompe el mar.",
+    "lat": 40.36134,
+    "lng": 0.40682,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.36134,0.40682"
+  },
+  {
+    "nombre": "Portal de Sant Pere",
+    "comentario": "Entrada histórica a la ciudad amurallada.",
+    "lat": 40.36063,
+    "lng": 0.40687,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.36063,0.40687"
+  },
+  {
+    "nombre": "Casa de las Conchas",
+    "comentario": "Una de las fachadas más fotografiadas.",
+    "lat": 40.36112,
+    "lng": 0.40655,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.36112,0.40655"
+  },
+  {
+    "nombre": "Museo del Mar",
+    "comentario": "Museo del mundo marítimo gratuito.",
+    "lat": 40.36142,
+    "lng": 0.40629,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.36142,0.40629"
+  },
+  {
+    "nombre": "Ermita de la Virgen de la Ermitana",
+    "comentario": "Templo barroco junto al castillo.",
+    "lat": 40.36088,
+    "lng": 0.40597,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.36088,0.40597"
+  },
+  {
+    "nombre": "Faro de Peñíscola",
+    "comentario": "Pequeño faro con magníficas vistas al mar.",
+    "lat": 40.36101,
+    "lng": 0.40619,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.36101,0.40619"
+  }
+]

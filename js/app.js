@@ -177,7 +177,72 @@ async function getOperations(category) {
 
   return results.flat();
 }
+let currentPosition = null;
 
+function toRadians(degrees) {
+  return degrees * (Math.PI / 180);
+}
+
+function calculateDistance(lat1, lng1, lat2, lng2) {
+  const earthRadiusKm = 6371;
+
+  const latitudeDifference = toRadians(lat2 - lat1);
+  const longitudeDifference = toRadians(lng2 - lng1);
+
+  const a =
+    Math.sin(latitudeDifference / 2) ** 2 +
+    Math.cos(toRadians(lat1)) *
+      Math.cos(toRadians(lat2)) *
+      Math.sin(longitudeDifference / 2) ** 2;
+
+  const c = 2 * Math.atan2(
+    Math.sqrt(a),
+    Math.sqrt(1 - a)
+  );
+
+  return earthRadiusKm * c;
+}
+
+function formatDistance(distanceKm) {
+  if (distanceKm < 1) {
+    return `${Math.round(distanceKm * 1000)} m`;
+  }
+
+  return `${distanceKm.toFixed(1).replace(".", ",")} km`;
+}
+
+function requestUserLocation() {
+  return new Promise((resolve) => {
+    if (!navigator.geolocation) {
+      resolve(null);
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        currentPosition = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        resolve(currentPosition);
+      },
+      (error) => {
+        console.warn(
+          "No se ha podido obtener la ubicación:",
+          error
+        );
+
+        resolve(null);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 60000
+      }
+    );
+  });
+}
 function createPlaceCard(place) {
   const article = document.createElement("article");
   article.className = "operation-place";
@@ -185,7 +250,25 @@ function createPlaceCard(place) {
   const title = document.createElement("h5");
   title.textContent = place.nombre || "Lugar sin nombre";
   article.appendChild(title);
+if (
+  currentPosition &&
+  Number.isFinite(place.lat) &&
+  Number.isFinite(place.lng)
+) {
+  const distanceKm = calculateDistance(
+    currentPosition.lat,
+    currentPosition.lng,
+    place.lat,
+    place.lng
+  );
 
+  const distance = document.createElement("span");
+  distance.className = "operation-distance";
+  distance.textContent =
+    `📍 A ${formatDistance(distanceKm)}`;
+
+  article.appendChild(distance);
+}
   if (place.comentario) {
     const comment = document.createElement("p");
     comment.textContent = place.comentario;
@@ -262,7 +345,36 @@ async function selectOperationCategory(category) {
 
   try {
     const places = await getOperations(category);
-    renderOperations(places, title);
+
+if (category === "restaurants" && currentPosition) {
+  places.sort((placeA, placeB) => {
+    const distanceA =
+      Number.isFinite(placeA.lat) &&
+      Number.isFinite(placeA.lng)
+        ? calculateDistance(
+            currentPosition.lat,
+            currentPosition.lng,
+            placeA.lat,
+            placeA.lng
+          )
+        : Infinity;
+
+    const distanceB =
+      Number.isFinite(placeB.lat) &&
+      Number.isFinite(placeB.lng)
+        ? calculateDistance(
+            currentPosition.lat,
+            currentPosition.lng,
+            placeB.lat,
+            placeB.lng
+          )
+        : Infinity;
+
+    return distanceA - distanceB;
+  });
+}
+
+renderOperations(places, title);
   } catch (error) {
     console.error(error);
 
@@ -431,6 +543,8 @@ async function startApp() {
     "components/map.html"
   );
 
+  await requestUserLocation();
+  
   enableFolders();
   enableOperationCategories();
   updateTripCountdown();

@@ -1,1 +1,93 @@
-[]
+[
+  {
+    "nombre": "La Casa del Jamón",
+    "comentario": "Jamón ibérico, tapas y raciones. Ideal para compartir.",
+    "lat": 40.3578083,
+    "lng": 0.4076479,
+    "googleMaps": "https://maps.app.goo.gl/b5MU48wpkuPyrwaJ9"
+  },
+  {
+    "nombre": "Calabuch",
+    "comentario": "Cocina mediterránea y arroces. Uno de los clásicos de Peñíscola.",
+    "lat": 40.3589263,
+    "lng": 0.4060746,
+    "googleMaps": "https://maps.app.goo.gl/uoiGjhHmk9dt5LKp8"
+  },
+  {
+    "nombre": "El Mercat",
+    "comentario": "Arroces y cocina mediterránea. Producto fresco y ambiente acogedor.",
+    "lat": 40.3593746,
+    "lng": 0.406388,
+    "googleMaps": "https://maps.app.goo.gl/8pAdMsvnzvEPHsDJ6"
+  },
+  {
+    "nombre": "Freiduría María",
+    "comentario": "Pescado frito y marisco. Perfecto para una comida informal.",
+    "lat": 40.3597587,
+    "lng": 0.4029308,
+    "googleMaps": "https://maps.app.goo.gl/MTZhsZUi9mXSYVMK8"
+  },
+  {
+    "nombre": "El Portón",
+    "comentario": "Cocina mediterránea, pizzas y arroces. Un valor seguro para cualquier ocasión.",
+    "lat": 40.3597542,
+    "lng": 0.4027052,
+    "googleMaps": "https://maps.app.goo.gl/qZBqXuXmqUGu9mCG7"
+  },
+  {
+    "nombre": "El Caracol",
+    "comentario": "Especialista en arroces. Muy recomendable para disfrutar de una buena paella.",
+    "lat": 40.3591947,
+    "lng": 0.4011784,
+    "googleMaps": "https://maps.app.goo.gl/RtdQ7jLbPbVNcrip6"
+  },
+  {
+    "nombre": "La Pulpería",
+    "comentario": "Pulpo, marisco y cocina gallega. Uno de los restaurantes más populares.",
+    "lat": 40.3601341,
+    "lng": 0.4014561,
+    "googleMaps": "https://maps.app.goo.gl/NTaAwJiE1XYHmiig8"
+  },
+  {
+    "nombre": "Restaurante 1971 Peñíscola",
+    "comentario": "Cocina mediterránea de autor. Una propuesta moderna y cuidada.",
+    "lat": 40.3622835,
+    "lng": 0.4021554,
+    "googleMaps": "https://maps.app.goo.gl/BB6JbKPfTTWf4tpR6"
+  },
+  {
+    "nombre": "Cosa Bona",
+    "comentario": "Comida casera para llevar. Perfecto para comer o cenar en el apartamento.",
+    "lat": 40.3606842,
+    "lng": 0.3975417,
+    "googleMaps": "https://maps.app.goo.gl/JV6EgUGPXdH9Z8iS6"
+  },
+  {
+    "nombre": "La Bodegueta",
+    "comentario": "Tapas y cocina mediterránea. Ideal para un picoteo con buen ambiente.",
+    "lat": 40.3618004,
+    "lng": 0.3976626,
+    "googleMaps": "https://maps.app.goo.gl/rrgdh6BJ6g5o2DTd6"
+  },
+  {
+    "nombre": "El Cañar",
+    "comentario": "Arroces y cocina mediterránea. Cocina tradicional con producto fresco.",
+    "lat": 40.3642434,
+    "lng": 0.3984322,
+    "googleMaps": "https://maps.app.goo.gl/rR9Ly6fxvtG4caLS8"
+  },
+  {
+    "nombre": "El Mañico",
+    "comentario": "Arroces, pescado y cocina mediterránea. Frente a la Playa Norte.",
+    "lat": 40.3677324,
+    "lng": 0.4037268,
+    "googleMaps": "https://maps.app.goo.gl/cVyFownxQjU876Eu7"
+  },
+  {
+    "nombre": "El Pescador Ermitaño",
+    "comentario": "Pescado fresco, marisco y arroces. Un referente gastronómico de Peñíscola.",
+    "lat": 40.3744523,
+    "lng": 0.4060925,
+    "googleMaps": "https://maps.app.goo.gl/TpaMyiMJZVUFgCkb7"
+  }
+]

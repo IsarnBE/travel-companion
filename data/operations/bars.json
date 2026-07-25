@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "nombre": "Café Teranga",
+    "comentario": "Cócteles y ambiente en pleno casco antiguo.",
+    "telefono": "690997478",
+    "googleMaps": "https://maps.app.goo.gl/fWWzbJbn7EGToN8s8"
+  },
+  {
+    "nombre": "Samarucs",
+    "comentario": "Cócteles con encanto junto al Bufador.",
+    "telefono": "603206663",
+    "googleMaps": "https://maps.app.goo.gl/UeawzX1B8PwP3VMDA"
+  },
+  {
+    "nombre": "Boca",
+    "comentario": "Vermut, tapas y terraza con vistas al mar.",
+    "telefono": "964845162",
+    "googleMaps": "https://maps.app.goo.gl/exPkFxTc54WLogeC9"
+  },
+  {
+    "nombre": "Bar Al Masset",
+    "comentario": "Bar clásico junto al puerto pesquero.",
+    "googleMaps": "https://maps.app.goo.gl/4AkZVyoB83EGDTph8"
+  },
+  {
+    "nombre": "La Vermutería de Felipe",
+    "comentario": "Vermuts y aperitivos en un ambiente informal.",
+    "googleMaps": "https://maps.app.goo.gl/DbZrMeJoWdH6zUG97"
+  },
+  {
+    "nombre": "Caffè del Mar",
+    "comentario": "Arroces, copas y terraza frente al mar.",
+    "telefono": "964843297",
+    "googleMaps": "https://maps.app.goo.gl/RrXMAP5beJrDtd7dA"
+  },
+  {
+    "nombre": "Rooftop Hotel Castillo de Peñíscola",
+    "comentario": "Copas con una de las mejores vistas de Peñíscola.",
+    "telefono": "964480914",
+    "googleMaps": "https://maps.app.goo.gl/EgntzkKUZLv2d7jd8"
+  },
+  {
+    "nombre": "Nudo Beach Club",
+    "comentario": "Beach Club con piscina, DJ y cócteles frente al mar.",
+    "telefono": "678750993",
+    "googleMaps": "https://maps.app.goo.gl/yEMp7mBCrULCtks56"
+  },
+  {
+    "nombre": "Tumbao Beach Bar",
+    "comentario": "Beach Bar con música y ambiente junto al mar.",
+    "googleMaps": "https://maps.app.goo.gl/36Kg1sp3Q4xbpiPq5"
+  }
+]

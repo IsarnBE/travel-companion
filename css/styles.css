@@ -929,4 +929,13 @@ justify-content:center;
     font-size:13px;
 
     line-height:1.4;
+}.operation-distance {
+  display: inline-block;
+  margin: 1px 0 7px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  background: #edf5f0;
+  color: #3e715a;
+  font-size: 12px;
+  font-weight: 800;
 }

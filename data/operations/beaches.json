@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "nombre": "Playa Norte",
+    "comentario": "La playa principal de Peñíscola.",
+    "lat": 40.36920,
+    "lng": 0.40860,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.36920,0.40860"
+  },
+  {
+    "nombre": "Playa Sur",
+    "comentario": "Más tranquila y junto al casco antiguo.",
+    "lat": 40.35955,
+    "lng": 0.40465,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.35955,0.40465"
+  },
+  {
+    "nombre": "Playa de la Basseta",
+    "comentario": "Pequeña playa junto al puerto deportivo.",
+    "lat": 40.35863,
+    "lng": 0.40174,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.35863,0.40174"
+  },
+  {
+    "nombre": "Cala Puerto Azul",
+    "comentario": "Rocas y aguas cristalinas.",
+    "lat": 40.33872,
+    "lng": 0.39147,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.33872,0.39147"
+  },
+  {
+    "nombre": "Cala del Volante",
+    "comentario": "Ideal para snorkel y tranquilidad.",
+    "lat": 40.33180,
+    "lng": 0.38772,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.33180,0.38772"
+  },
+  {
+    "nombre": "Cala Ordí",
+    "comentario": "Cala natural dentro de Sierra de Irta.",
+    "lat": 40.32410,
+    "lng": 0.38355,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.32410,0.38355"
+  },
+  {
+    "nombre": "Cala Badum",
+    "comentario": "La cala más famosa de Sierra de Irta.",
+    "lat": 40.31580,
+    "lng": 0.37910,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.31580,0.37910"
+  },
+  {
+    "nombre": "Playa del Pebret",
+    "comentario": "Playa virgen y muy poco masificada.",
+    "lat": 40.28560,
+    "lng": 0.36460,
+    "googleMaps": "https://www.google.com/maps/dir/?api=1&destination=40.28560,0.36460"
+  }
+]
