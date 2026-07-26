@@ -3,48 +3,48 @@
     "nombre": "Heladería Nata Fresa",
     "comentario": "Gran variedad de sabores y opciones para intolerancias.",
     "telefono": "629014717",
-    "lat": 0,
-    "lng": 0,
+   "lat": 40.35953,
+    "lng": 0.40424,
     "googleMaps": "https://maps.app.goo.gl/Pwz29RuxQjyyvFks8"
   },
   {
     "nombre": "Dolce Talú",
     "comentario": "Helado artesanal en pleno casco antiguo.",
     "telefono": "642262152",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.35965,
+    "lng": 0.40211,
     "googleMaps": "https://maps.app.goo.gl/e3HzMzNwteftCa2H9"
   },
   {
     "nombre": "Gelateria Pieri",
     "comentario": "Considerada por muchos la mejor heladería de Peñíscola.",
     "telefono": "672784124",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.36720,
+    "lng": 0.40327,
     "googleMaps": "https://maps.app.goo.gl/E8Q8J3sBuob6VRP19"
   },
   {
     "nombre": "Gelateria del Sol",
     "comentario": "Helado italiano artesanal.",
     "telefono": "744748702",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.36816,
+    "lng": 0.40384,
     "googleMaps": "https://maps.app.goo.gl/AFj2Z88eyqdYc2MF7"
   },
   {
     "nombre": "Heladería Brisa del Mar",
     "comentario": "Terraza ideal para tomar un helado junto al paseo.",
     "telefono": "626801225",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.38492,
+    "lng": 0.40941,
     "googleMaps": "https://maps.app.goo.gl/J3kcs8D11vEdY6Dc6"
   },
   {
     "nombre": "Volare",
     "comentario": "Helados, cócteles y terraza frente al mar.",
     "telefono": "664589081",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.38049,
+    "lng": 0.40795,
     "googleMaps": "https://maps.app.goo.gl/DBwvwYmrCWasBv889"
   }
 ]

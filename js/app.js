@@ -346,7 +346,16 @@ async function selectOperationCategory(category) {
   try {
     const places = await getOperations(category);
 
-if (category === "restaurants" && currentPosition) {
+const categoriesOrderedByDistance = [
+  "restaurants",
+  "icecreams",
+  "bars"
+];
+
+if (
+  categoriesOrderedByDistance.includes(category) &&
+  currentPosition
+) {
   places.sort((placeA, placeB) => {
     const distanceA =
       Number.isFinite(placeA.lat) &&
@@ -459,18 +468,6 @@ function enableOperationCategories() {
     results.hidden = true;
   }
 }
-
-  const initialButton =
-    document.querySelector(
-      '.operation-category[data-category="all"]'
-    );
-
-  if (initialButton) {
-    moveOperationsResults(initialButton);
-  }
-
-  selectOperationCategory("all");
-
 function updateTripCountdown() {
   const numberElement =
     document.getElementById("trip-number");

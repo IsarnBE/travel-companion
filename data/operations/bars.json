@@ -3,69 +3,69 @@
     "nombre": "Café Teranga",
     "comentario": "Cócteles y ambiente en pleno casco antiguo.",
     "telefono": "690997478",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.35738,
+    "lng": 0.40789,
     "googleMaps": "https://maps.app.goo.gl/fWWzbJbn7EGToN8s8"
   },
   {
     "nombre": "Samarucs",
     "comentario": "Cócteles con encanto junto al Bufador.",
     "telefono": "603206663",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.35703,
+    "lng": 0.40709,
     "googleMaps": "https://maps.app.goo.gl/UeawzX1B8PwP3VMDA"
   },
   {
     "nombre": "Boca",
     "comentario": "Vermut, tapas y terraza con vistas al mar.",
     "telefono": "964845162",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.35698,
+    "lng": 0.40762,
     "googleMaps": "https://maps.app.goo.gl/exPkFxTc54WLogeC9"
   },
   {
     "nombre": "Bar Al Masset",
     "comentario": "Bar clásico junto al puerto pesquero.",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.35897,
+    "lng": 0.40698,
     "googleMaps": "https://maps.app.goo.gl/4AkZVyoB83EGDTph8"
   },
   {
     "nombre": "La Vermutería de Felipe",
     "comentario": "Vermuts y aperitivos en un ambiente informal.",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.35998,
+    "lng": 0.40144,
     "googleMaps": "https://maps.app.goo.gl/DbZrMeJoWdH6zUG97"
   },
   {
     "nombre": "Caffè del Mar",
     "comentario": "Arroces, copas y terraza frente al mar.",
     "telefono": "964843297",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.35816,
+    "lng": 0.39909,
     "googleMaps": "https://maps.app.goo.gl/RrXMAP5beJrDtd7dA"
   },
   {
     "nombre": "Rooftop Hotel Castillo de Peñíscola",
     "comentario": "Copas con una de las mejores vistas de Peñíscola.",
     "telefono": "964480914",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.36249,
+    "lng": 0.40222,
     "googleMaps": "https://maps.app.goo.gl/EgntzkKUZLv2d7jd8"
   },
   {
     "nombre": "Nudo Beach Club",
     "comentario": "Beach Club con piscina, DJ y cócteles frente al mar.",
     "telefono": "678750993",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.35710,
+    "lng": 0.40394,
     "googleMaps": "https://maps.app.goo.gl/yEMp7mBCrULCtks56"
   },
   {
     "nombre": "Tumbao Beach Bar",
     "comentario": "Beach Bar con música y ambiente junto al mar.",
-    "lat": 0,
-    "lng": 0,
+    "lat": 40.35829,
+    "lng": 0.40329,
     "googleMaps": "https://maps.app.goo.gl/36Kg1sp3Q4xbpiPq5"
   }
 ]
