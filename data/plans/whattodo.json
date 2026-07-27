@@ -68,7 +68,7 @@
       {
         "nombre": "Anavegar",
         "icono": "⛵",
-        "comentario": "Alquiler de embarcaciones para recorrer la costa.",
+        "comentario": "Alquiler de embarcaciones en Benicarló.",
         "web": "https://anavegar.es/",
         "telefono": "635815611",
         "googleMaps": ""
@@ -80,15 +80,8 @@
         "web": "https://xn--charterpeiscola-6qb.com/",
         "telefono": "641638906",
         "googleMaps": "https://maps.app.goo.gl/TrLGHH13UN5fnBZH7"
-      },
-      {
-        "nombre": "Navega Costa Azahar",
-        "icono": "⚓",
-        "comentario": "Alquiler de embarcaciones en la Costa del Azahar.",
-        "web": "https://navegacostaazahar.es/",
-        "telefono": "644313191",
-        "googleMaps": ""
       }
+    
     ]
   },
   {
