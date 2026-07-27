@@ -1,0 +1,184 @@
+[
+  {
+    "id": "peniscola",
+    "titulo": "Cositas por Peñíscola",
+    "icono": "🏰",
+    "planes": [
+      {
+        "nombre": "Castillo Templario",
+        "icono": "🏰",
+        "comentario": "La entrada está incluida con el Escape Room.",
+        "web": "",
+        "googleMaps": ""
+      },
+      {
+        "nombre": "Museo del Mar",
+        "icono": "⚓",
+        "comentario": "Museo marítimo arqueológico gratuito.",
+        "web": "https://www.peniscola.org/ver/875/museu-de-la-mar.html",
+        "googleMaps": "https://maps.app.goo.gl/QpA4ovE7JNtdM7rp6"
+      },
+      {
+        "nombre": "Vive Peñíscola Tours",
+        "icono": "🕯️",
+        "comentario": "Castillo, puerto, misterios y leyendas.",
+        "web": "https://www.vivepeniscola.com/",
+        "telefono": "630196296",
+        "googleMaps": ""
+      }
+    ]
+  },
+  {
+    "id": "playa",
+    "titulo": "Día de playa",
+    "icono": "🌊",
+    "planes": [
+      {
+        "nombre": "Paddle Surf Peñíscola",
+        "icono": "🏄",
+        "comentario": "Paddle surf, surf y excursiones guiadas.",
+        "web": "https://paddlesurfpeniscola.com/",
+        "telefono": "644026066",
+        "googleMaps": ""
+      },
+      {
+        "nombre": "Ekobikes",
+        "icono": "🛶",
+        "comentario": "Paddle surf, kayak, kayak doble y equipo de snorkel.",
+        "web": "https://ekobikes.es/",
+        "telefono": "638233549",
+        "googleMaps": "https://maps.app.goo.gl/Rin1rqSZRMmc34th6"
+      },
+      {
+        "nombre": "Nautic Riders",
+        "icono": "🌊",
+        "comentario": "Windsurf, paddle surf y motos de agua.",
+        "web": "https://nauticriders.com/",
+        "telefono": "663299778",
+        "googleMaps": "https://maps.app.goo.gl/2Q6uXabUoc6NDuyn7"
+      },
+      {
+        "nombre": "Golondrinas Clavel",
+        "icono": "🚤",
+        "comentario": "Paseo de 30 minutos por la costa, sin reserva previa.",
+        "web": "https://golondrinasclavel.com/services/peniscola/",
+        "telefono": "",
+        "googleMaps": "https://maps.app.goo.gl/19jQRxwi3KvXr6ar9"
+      },
+      {
+        "nombre": "Anavegar",
+        "icono": "⛵",
+        "comentario": "Alquiler de embarcaciones para recorrer la costa.",
+        "web": "https://anavegar.es/",
+        "telefono": "635815611",
+        "googleMaps": ""
+      },
+      {
+        "nombre": "Boat Charter",
+        "icono": "🛥️",
+        "comentario": "Alquiler de barcos en Peñíscola.",
+        "web": "https://xn--charterpeiscola-6qb.com/",
+        "telefono": "641638906",
+        "googleMaps": "https://maps.app.goo.gl/TrLGHH13UN5fnBZH7"
+      },
+      {
+        "nombre": "Navega Costa Azahar",
+        "icono": "⚓",
+        "comentario": "Alquiler de embarcaciones en la Costa del Azahar.",
+        "web": "https://navegacostaazahar.es/",
+        "telefono": "644313191",
+        "googleMaps": ""
+      }
+    ]
+  },
+  {
+    "id": "actividades",
+    "titulo": "Actividades",
+    "icono": "🎯",
+    "planes": [
+      {
+        "nombre": "Karting Benikarts",
+        "icono": "🏁",
+        "comentario": "Uno de los mejores circuitos de karting de España.",
+        "web": "https://www.benikarts.com/",
+        "telefono": "964303603",
+        "googleMaps": "https://maps.app.goo.gl/95gZ4ofPgmrwboVQA"
+      },
+      {
+        "nombre": "Laberinto de Peñíscola",
+        "icono": "🌳",
+        "comentario": "El mayor laberinto de España y el tercero de Europa.",
+        "web": "https://www.laberintodepeniscola.com/",
+        "telefono": "684480640",
+        "googleMaps": "https://maps.app.goo.gl/r47z1YxNVJXv5Wsp9"
+      },
+      {
+        "nombre": "Parque acuático",
+        "icono": "💦",
+        "comentario": "Un día de piscinas y atracciones para disfrutar en familia.",
+        "web": "https://aquarama.net/",
+        "googleMaps": "https://maps.app.goo.gl/q7p4VK6BCVyion5E6"
+      }
+    ]
+  },
+  {
+    "id": "excursiones",
+    "titulo": "Excursiones",
+    "icono": "🌿",
+    "planes": [
+      {
+        "nombre": "Parque Natural de la Sierra de Irta",
+        "icono": "🥾",
+        "comentario": "Calas naturales, senderos y miradores.",
+        "googleMaps": ""
+      },
+      {
+        "nombre": "Multimarcas Motos Peñíscola",
+        "icono": "🛵",
+        "comentario": "Bicicletas, patinetes, karts y scooters de 125 cc.",
+        "web": "https://www.mmpbikes.com/",
+        "telefono": "610578108",
+        "googleMaps": "https://maps.app.goo.gl/r5jgWEQWQuN33TJr7"
+      },
+      {
+        "nombre": "Ekobikes",
+        "icono": "🚲",
+        "comentario": "Bicicletas urbanas, eléctricas y de montaña.",
+        "web": "https://www.ekobikes.com/",
+        "telefono": "638233549",
+        "googleMaps": "https://maps.app.goo.gl/Rin1rqSZRMmc34th6"
+      }
+    ]
+  },
+  {
+    "id": "turismo",
+    "titulo": "Turismo",
+    "icono": "🚗",
+    "planes": [
+      {
+        "nombre": "Morella",
+        "icono": "🏰",
+        "comentario": "Ciudad medieval a unos 75 km y 56 minutos.",
+        "googleMaps": "https://maps.app.goo.gl/ukVfcTFvJVJxriG5A"
+      },
+      {
+        "nombre": "Sant Mateu",
+        "icono": "🏛️",
+        "comentario": "Historia y casco antiguo a unos 47 km y 36 minutos.",
+        "googleMaps": "https://maps.app.goo.gl/mJb9wzCuaEtQnSnH6"
+      },
+      {
+        "nombre": "Delta del Ebro",
+        "icono": "🌾",
+        "comentario": "Naturaleza, arrozales y aves a unos 56 km y 47 minutos.",
+        "googleMaps": "https://maps.app.goo.gl/pPo4wPQ6mnTkExFq6"
+      },
+      {
+        "nombre": "Port Saplaya",
+        "icono": "⚓",
+        "comentario": "Canales, puerto y casas de colores a unas 1 h 20 min.",
+        "googleMaps": "https://maps.app.goo.gl/DDjZkf1LXXw2m6428"
+      }
+    ]
+  }
+]
