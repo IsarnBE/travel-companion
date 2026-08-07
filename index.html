@@ -57,49 +57,49 @@
           <span class="weekday">LUN</span>
           <strong>10</strong>
           <span class="weather-icon">☀️</span>
-          <small>—°</small>
+          <small>...</small>
         </article>
 
         <article class="forecast-day">
           <span class="weekday">MAR</span>
           <strong>11</strong>
           <span class="weather-icon">🌤️</span>
-          <small>—°</small>
+          <small>...</small>
         </article>
 
         <article class="forecast-day special-day">
           <span class="weekday">MIÉ</span>
           <strong>12</strong>
           <span class="weather-icon">🌒</span>
-          <small>Eclipse</small>
+          <small>...</small>
         </article>
 
         <article class="forecast-day">
           <span class="weekday">JUE</span>
           <strong>13</strong>
           <span class="weather-icon">☀️</span>
-          <small>—°</small>
+          <small>...</small>
         </article>
 
         <article class="forecast-day">
           <span class="weekday">VIE</span>
           <strong>14</strong>
           <span class="weather-icon">🌤️</span>
-          <small>—°</small>
+          <small>...</small>
         </article>
 
         <article class="forecast-day">
           <span class="weekday">SÁB</span>
           <strong>15</strong>
           <span class="weather-icon">☀️</span>
-          <small>—°</small>
+          <small>...</small>
         </article>
 
         <article class="forecast-day">
           <span class="weekday">DOM</span>
           <strong>16</strong>
           <span class="weather-icon">☀️</span>
-          <small>—°</small>
+          <small>...</small>
         </article>
 
       </div>
@@ -110,67 +110,50 @@
     </section>
 
     <section class="today-card">
-      <p class="label">Ahora</p>
-      <h2>Preparando el viaje</h2>
-      <p>Todo listo para ir incorporando mapas, eventos y lugares.</p>
-    </section>
+  <p class="label">AHORA</p>
+  <h2>Todo preparado</h2>
+  <p>La aventura ya está organizada. Solo queda hacer las maletas y disfrutar de Peñíscola.</p>
+</section>
 
     <section class="archive">
 
       <!-- VIAJE pasa a ser el primer archivo -->
       <article class="folder folder-trip">
-        <button class="folder-tab" type="button">
-          <span class="folder-icon">📅</span>
+  <button class="folder-tab" type="button">
+    <span class="folder-icon">📅</span>
 
-          <span class="folder-title">
-            <strong>Viaje</strong>
-            <small>Eventos, ideas y diario</small>
-          </span>
+    <span class="folder-title">
+      <strong>Viaje</strong>
+      <small>Eventos, ideas y diario</small>
+    </span>
 
-          <span class="folder-arrow">⌄</span>
-        </button>
+    <span class="folder-arrow">⌄</span>
+  </button>
 
-        <div class="folder-content trip-content">
-  <section id="trip-status" class="countdown-card">
-   
-    <strong class="countdown-number" id="trip-number">--</strong>
+  <div class="folder-content trip-content">
 
-    <p class="countdown-unit">
-    DÍAS
-</p>
+    <section id="trip-status" class="countdown-card">
+      <strong class="countdown-number" id="trip-number">--</strong>
 
-<p class="countdown-message" id="trip-message">
-    para vernos en Peñíscola
-</p>
-  </section>
+      <p class="countdown-unit">
+        DÍAS
+      </p>
 
-  <div class="trip-events">
-    <h3>Próximos momentos</h3>
+      <p class="countdown-message" id="trip-message">
+        para vernos en Peñíscola
+      </p>
+    </section>
 
-    <ul class="event-preview">
-      <li>
-        <span>10 agosto</span>
-        🏠 Llegada
-      </li>
+    <div class="trip-events">
+      <h3>Próximos momentos</h3>
 
-      <li>
-        <span>11 agosto · 18:30</span>
-        🔐 Escape Room
-      </li>
+      <div id="trip-events">
+        <p class="trip-loading">Cargando viaje...</p>
+      </div>
+    </div>
 
-      <li>
-        <span>12 agosto</span>
-        🌒 Eclipse
-      </li>
-
-      <li>
-        <span>16 agosto</span>
-        🧳 Regreso
-      </li>
-    </ul>
   </div>
-</div>
-      </article>
+</article>
 
       <div id="map-component"></div>
 
@@ -196,6 +179,8 @@
 
   <script src="js/operations.js"></script>
   <script src="js/whattodo.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/trip.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

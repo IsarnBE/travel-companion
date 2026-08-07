@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Llegada",
+    "icono": "🏠",
+    "resumen": "Check In · 14:00 h"
+  },
+  {
+    "nombre": "Escape Room",
+    "icono": "🔐",
+    "resumen": "11 agosto · 18:30 h",
+    "detalle": [
+      "Plaza de Santa María de Peñíscola",
+      "Entrada al castillo incluida"
+    ],
+    "googleMaps": "https://maps.app.goo.gl/xTB5Pz74Cs5b6Gi6A"
+  },
+  {
+    "nombre": "Eclipse",
+    "icono": "🌒",
+    "resumen": "12 agosto",
+    "detalle": [
+      "Inicio del eclipse parcial · 19:36 h",
+      "Eclipse total · 20:30–20:32 h",
+      "Puesta de Sol · 20:59 h"
+    ]
+  },
+  {
+    "nombre": "Regreso",
+    "icono": "🧳",
+    "resumen": "Check Out · 12:00 h"
+  }
+]

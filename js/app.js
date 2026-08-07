@@ -136,6 +136,8 @@ async function startApp() {
 
 await initOperations();
 initWhatToDo();
+initTripEvents();
+loadWeather();
 
 updateTripCountdown();
 }
